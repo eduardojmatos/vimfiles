@@ -1,3 +1,9 @@
+h1. THIS PROJECT HAS BEEN DISCONTINUED
+
+I recommend the vimfiles from YADR (and the entire dotfiles, actually, it's quite nice and well done and maintained)
+
+  https://github.com/JeanMertz/omz-to-prezto
+
 h1. Vim
 
 It is recommended that you use gVim in either Windows or Linux and MacVim for

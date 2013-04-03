@@ -279,6 +279,12 @@ inoremap <C-L> <C-O>:nohls<CR>
 
 "map to bufexplorer
 nnoremap <leader>b :BufExplorer<cr>
+"map to bufergator
+let g:buffergator_suppress_keymaps = 1
+nnoremap <leader>bg :BuffergatorToggle<cr>
+
+"disable resizing when calling buffergator
+let g:buffergator_autoexpand_on_split = 0
 
 "map to CommandT TextMate style finder
 nnoremap <leader>t :CommandT<CR>
@@ -396,8 +402,8 @@ map <C-l> <C-w>l
 nmap <C-s> :w<CR>
 
 "key mapping for tab navigation
-nmap <Tab> gt
-nmap <S-Tab> gT
+nmap <S-Tab> gt
+nmap <C-S-Tab> gT
 
 "Key mapping for textmate-like indentation
 nmap <D-[> <<
@@ -449,3 +455,6 @@ let Tlist_Ctags_Cmd='/Users/du_amparo/.vim/taglist_45'
 
 "my maps
 noremap <D-≈> :e <C-R>=expand("%:p:h") . '/'<CR>
+if has("balloon_eval")
+  set noballooneval
+endif
