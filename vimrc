@@ -16,7 +16,7 @@ set nocompatible
 set backspace=indent,eol,start
 
 "store lots of :cmdline history
-set history=1000
+set history=10000
 
 set showcmd     "show incomplete cmds down the bottom
 set showmode    "show current mode down the bottom
@@ -181,9 +181,9 @@ function! s:Median(nums)
 endfunction
 
 "indent settings
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set autoindent
 
@@ -217,7 +217,6 @@ syntax on
 
 "some stuff to get the mouse going in term
 set mouse=a
-set ttymouse=xterm2
 
 "hide buffers when not displayed
 set hidden
@@ -230,20 +229,20 @@ if has("gui_running")
     "tell the term has 256 colors
     set t_Co=256
 
-    colorscheme molokai
+    colorscheme railscasts
     set guitablabel=%M%t
-    set lines=40
-    set columns=115
+    set lines=41
+    set columns=210
 
     if has("gui_gnome")
         set term=gnome-256color
-        colorscheme molokai
+        colorscheme railscasts
         set guifont=Monospace\ Bold\ 12
     endif
 
     if has("gui_mac") || has("gui_macvim")
-        set guifont=Menlo:h12
-        set transparency=7
+        set guifont=Menlo:h15
+        set transparency=5
     endif
 
     if has("gui_win32") || has("gui_win32s")
@@ -261,7 +260,7 @@ else
     else
         if $TERM == 'xterm'
             set term=xterm-256color
-            colorscheme molokai
+            colorscheme railscasts
         else
             colorscheme default
         endif
@@ -441,4 +440,12 @@ inoremap <Esc>B <down>
 inoremap <Esc>C <right>
 inoremap <Esc>D <left>
 
-set noballooneval
+"set noballooneval
+map <C-t> :CtrlP<CR>
+map <xCSI>[62~ <MouseDown>]
+set ttymouse=xterm2
+
+let Tlist_Ctags_Cmd='/Users/du_amparo/.vim/taglist_45'
+
+"my maps
+noremap <D-≈> :e <C-R>=expand("%:p:h") . '/'<CR>
