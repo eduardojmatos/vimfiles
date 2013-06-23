@@ -202,3 +202,6 @@
 [submodule "bundle/jasmine"]
 	path = bundle/jasmine
 	url = git://github.com/claco/jasmine.vim.git
+[submodule "bundle/jshint-vim"]
+	path = bundle/jshint-vim
+	url = git@github.com:walm/jshint.vim.git

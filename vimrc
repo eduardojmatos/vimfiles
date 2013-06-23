@@ -1,5 +1,5 @@
-"avoiding annoying CSApprox warning message
-let g:CSApprox_verbose_level = 0
+"avoiding annoying csapprox warning message
+let g:csapprox_verbose_level = 0
 
 "necessary on some Linux distros for pathogen to properly load bundles
 filetype on
@@ -20,6 +20,7 @@ set history=10000
 
 set showcmd     "show incomplete cmds down the bottom
 set showmode    "show current mode down the bottom
+set shortmess+=A "A don't give the 'ATTENTION' message when an existing swap file is found.
 
 set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
@@ -231,8 +232,8 @@ if has("gui_running")
 
     colorscheme railscasts
     set guitablabel=%M%t
-    set lines=41
-    set columns=210
+    set lines=42
+    set columns=213
 
     if has("gui_gnome")
         set term=gnome-256color
