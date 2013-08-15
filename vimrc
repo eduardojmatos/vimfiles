@@ -57,7 +57,7 @@ set fo=l
 set statusline=%f       "tail of the filename
 
 "Git
-set statusline+=%{fugitive#statusline()}
+set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
 
 "RVM
 set statusline+=%{exists('g:loaded_rvm')?rvm#statusline():''}
@@ -452,7 +452,7 @@ map <C-t> :CtrlP<CR>
 map <xCSI>[62~ <MouseDown>]
 set ttymouse=xterm2
 
-let Tlist_Ctags_Cmd='/Users/du_amparo/.vim/taglist_45'
+let Tlist_Ctags_Cmd='/Users/eduardomatos/.vim/taglist_45'
 
 "my maps
 noremap <D-≈> :e <C-R>=expand("%:p:h") . '/'<CR>
