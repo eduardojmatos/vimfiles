@@ -57,7 +57,7 @@ set fo=l
 set statusline=%f       "tail of the filename
 
 "Git
-set statusline+=%{fugitive#statusline()}
+set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
 
 "RVM
 set statusline+=%{exists('g:loaded_rvm')?rvm#statusline():''}
