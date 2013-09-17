@@ -452,10 +452,17 @@ map <C-t> :CtrlP<CR>
 map <xCSI>[62~ <MouseDown>]
 set ttymouse=xterm2
 
-let Tlist_Ctags_Cmd='/Users/du_amparo/.vim/taglist_45'
+let Tlist_Ctags_Cmd='/Users/eduardomatos/.vim/taglist_45'
 
 "my maps
 noremap <D-≈> :e <C-R>=expand("%:p:h") . '/'<CR>
 if has("balloon_eval")
   set noballooneval
 endif
+
+augroup filetypedetect
+  autocmd BufRead,BufNewFile *.prawn set filetype=ruby
+augroup END
+
+nmap <F8> :set columns+=10<CR>
+nmap <F9> :set lines+=10<CR>
