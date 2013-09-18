@@ -252,7 +252,7 @@ if has("gui_running")
     endif
 else
     "dont load csapprox if there is no gui support - silences an annoying warning
-    let g:CSApprox_loaded = 1
+    let g:CSApprox_loaded = 0
 
     "set railscasts colorscheme when running vim in gnome terminal
     if $COLORTERM == 'gnome-terminal'
