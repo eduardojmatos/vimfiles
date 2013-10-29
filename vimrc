@@ -243,7 +243,7 @@ if has("gui_running")
 
     if has("gui_mac") || has("gui_macvim")
         set guifont=Menlo:h15
-        set transparency=5
+        set transparency=2
     endif
 
     if has("gui_win32") || has("gui_win32s")
@@ -464,6 +464,8 @@ endif
 augroup filetypedetect
   autocmd BufRead,BufNewFile *.prawn set filetype=ruby
 augroup END
+
+autocmd FileType css, sass, scss set omnifunc=csscomplete#CompleteCSS
 
 nmap <F8> :set columns+=10<CR>
 nmap <F9> :set lines+=10<CR>
