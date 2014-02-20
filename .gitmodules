@@ -205,3 +205,6 @@
 [submodule "bundle/jshint-vim"]
 	path = bundle/jshint-vim
 	url = git@github.com:walm/jshint.vim.git
+[submodule "bundle/emmet-vim"]
+	path = bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
