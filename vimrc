@@ -469,3 +469,6 @@ autocmd FileType css, sass, scss set omnifunc=csscomplete#CompleteCSS
 
 nmap <F8> :set columns+=10<CR>
 nmap <F9> :set lines+=10<CR>
+
+"change key to expand emmet
+let g:user_emmet_leader_key = '<c-e>'
