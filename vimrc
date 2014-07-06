@@ -29,6 +29,8 @@ set number      "add line numbers
 set showbreak=...
 set wrap linebreak nolist
 
+syntax enable
+
 "mapping for command key to map navigation thru display lines instead
 "of just numbered lines
 vmap <D-j> gj
@@ -230,7 +232,7 @@ if has("gui_running")
     "tell the term has 256 colors
     set t_Co=256
 
-    colorscheme jellybeans
+    colorscheme lucario
     set guitablabel=%M%t
     set lines=42
     set columns=213
