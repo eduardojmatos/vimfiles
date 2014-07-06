@@ -230,7 +230,7 @@ if has("gui_running")
     "tell the term has 256 colors
     set t_Co=256
 
-    colorscheme railscasts
+    colorscheme jellybeans
     set guitablabel=%M%t
     set lines=42
     set columns=213
