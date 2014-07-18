@@ -214,7 +214,7 @@ filetype plugin on
 filetype indent on
 
 "turn on syntax highlighting
-syntax enable
+syntax on
 
 "some stuff to get the mouse going in term
 set mouse=a
