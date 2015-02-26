@@ -304,8 +304,12 @@ inoremap <M-o>       <Esc>o
 inoremap <C-j>       <Down>
 let g:ragtag_global_maps = 1
 
-"mark syntax errors with :signs
+"mark syntax errors with :signs | syntax options
 let g:syntastic_enable_signs=1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 "key mapping for vimgrep result navigation
 map <A-o> :copen<CR>
@@ -474,3 +478,6 @@ nmap <F9> :set lines+=10<CR>
 
 "change key to expand emmet
 let g:user_emmet_leader_key = '<c-e>'
+
+" Vim airline configs
+let g:airline#extensions#tabline#enabled = 1
