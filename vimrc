@@ -232,7 +232,7 @@ if has("gui_running")
     "tell the term has 256 colors
     set t_Co=256
 
-    colorscheme jellybeans
+    colorscheme spacegray
     set guitablabel=%M%t
     set lines=42
     set columns=213
