@@ -252,5 +252,5 @@
   ignore = dirty
 [submodule "bundle/vim-multiedit"]
   path = bundle/vim-multiedit
-  url = https://github.com/hlissner/vim-multiedit
+  url = https://github.com/tpope/vim-repeat
   ignore = dirty
