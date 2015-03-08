@@ -481,3 +481,19 @@ let g:user_emmet_leader_key = '<c-e>'
 
 " Vim airline configs
 let g:airline#extensions#tabline#enabled = 1
+
+" GitGutter configs
+let g:gitgutter_enabled = 1
+let g:gitgutter_realtime = 0
+let g:gitgutter_max_signs = 500
+let g:gitgutter_sign_column_always = 1
+let g:gitgutter_highlight_lines = 1
+let g:gitgutter_escape_grep = 1
+
+" GitGutter override colors
+hi GitGutterAdd              guibg=NONE     guifg=#4BA92C
+hi GitGutterChange           guibg=NONE     guifg=#DED426
+hi GitGutterDelete           guibg=NONE     guifg=#4BA92C
+hi GitGutterAddLine          guibg=#143808  guifg=NONE
+hi GitGutterDeleteLine       guibg=#552125  guifg=NONE
+hi GitGutterChangeLine       guibg=#4D4907  guifg=NONE
