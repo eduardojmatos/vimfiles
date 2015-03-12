@@ -489,11 +489,21 @@ let g:gitgutter_max_signs = 500
 let g:gitgutter_sign_column_always = 1
 let g:gitgutter_highlight_lines = 1
 let g:gitgutter_escape_grep = 1
+let g:gitgutter_sign_added = '++'
+let g:gitgutter_sign_modified = '~~'
+let g:gitgutter_sign_removed = 'xx'
 
 " GitGutter override colors
-hi GitGutterAdd              guibg=NONE     guifg=#4BA92C
-hi GitGutterChange           guibg=NONE     guifg=#DED426
-hi GitGutterDelete           guibg=NONE     guifg=#4BA92C
+hi GitGutterAdd               ctermbg=Black     ctermfg=LightGreen    guibg=Black   guifg=LightGreen
+hi GitGutterChange            ctermbg=Black     ctermfg=LightYellow   guibg=Black   guifg=LightYellow
+hi GitGutterDelete            ctermbg=Black     ctermfg=LightRed      guibg=Black   guifg=LightRed
+hi myGitGutterAddLine           ctermbg=NONE     ctermfg=NONE   guibg=NONE   guifg=NONE
+hi myGitGutterChangeLine        ctermbg=NONE     ctermfg=NONE   guibg=NONE   guifg=NONE
+hi myGitGutterDeleteLine        ctermbg=NONE     ctermfg=NONE  guibg=NONE   guifg=NONE
+
+highlight link GitGutterAddLine myGitGutterAddLine
+highlight link GitGutterChangeLine myGitGutterChangeLine
+highlight link GitGutterDeleteLine myGitGutterDeleteLine
 
 " Search color highlight
 hi Search    ctermbg=2    ctermfg=232    guibg=#47583B  guifg=NONE  cterm=NONE      gui=NONE
