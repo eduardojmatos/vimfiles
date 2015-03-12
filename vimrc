@@ -494,9 +494,6 @@ let g:gitgutter_escape_grep = 1
 hi GitGutterAdd              guibg=NONE     guifg=#4BA92C
 hi GitGutterChange           guibg=NONE     guifg=#DED426
 hi GitGutterDelete           guibg=NONE     guifg=#4BA92C
-hi GitGutterAddLine          guibg=#143808  guifg=NONE
-hi GitGutterDeleteLine       guibg=#552125  guifg=NONE
-hi GitGutterChangeLine       guibg=#4D4907  guifg=NONE
 
 " Search color highlight
 hi Search    ctermbg=2    ctermfg=232    guibg=#47583B  guifg=NONE  cterm=NONE      gui=NONE
