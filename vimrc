@@ -507,3 +507,13 @@ highlight link GitGutterDeleteLine myGitGutterDeleteLine
 
 " Search color highlight
 hi Search    ctermbg=2    ctermfg=232    guibg=#47583B  guifg=NONE  cterm=NONE      gui=NONE
+
+" JSHint options
+let g:jshint2_close = 0
+let g:jshint2_save = 0
+let g:jshint2_read = 0
+let g:jshint2_height = 5
+let g:jshint2_quickfix = 0
+
+" CommandT options
+set wildignore=&wildignore,**/bower_components/*,**/node_modules/*
