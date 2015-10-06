@@ -228,6 +228,9 @@ set hidden
 set ic
 set smartcase
 
+"Copy selection
+set clipboard=unnamed
+
 if has("gui_running")
     "tell the term has 256 colors
     set t_Co=256
@@ -418,6 +421,8 @@ nmap <D-[> <<
 nmap <D-]> >>
 vmap <D-[> <gv
 vmap <D-]> >gv
+
+cmap w!! w !sudo tee > /dev/null %
 
 let ScreenShot = {'Icon':0, 'Credits':0, 'force_background':'#FFFFFF'}
 
