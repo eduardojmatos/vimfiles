@@ -4,7 +4,7 @@ This project it's a fork from akitaonrails/vimfiles, but he discontinued the pro
 
 It's just my vimfiles!
 
-OBS: all descriptions here are from akitaonrails/vimfiles (:https://github.com/akitaonrails/vimfiles")
+OBS: all descriptions here are from https://github.com/akitaonrails/vimfiles
 
 h1. Vim
 
