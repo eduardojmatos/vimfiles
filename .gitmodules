@@ -254,3 +254,6 @@
   path = bundle/vim-multiedit
   url = https://github.com/tpope/vim-repeat
   ignore = dirty
+[submodule "bundle/handlebars"]
+	path = bundle/handlebars
+	url = git://github.com/nono/vim-handlebars.git
