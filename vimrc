@@ -74,7 +74,7 @@ set guioptions-=T
 set guioptions-=L
 set guioptions-=r
 
-set directory=$HOME/.vim/tmp/
+set directory=.,$TEMP
 
 "recalculate the trailing whitespace warning when idle, and after saving
 autocmd cursorhold,bufwritepost * unlet! b:statusline_trailing_space_warning
