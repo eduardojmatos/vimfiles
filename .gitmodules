@@ -275,3 +275,6 @@
 [submodule "bundle/vim-stylus"]
 	path = bundle/vim-stylus
 	url = git://github.com/wavded/vim-stylus.git
+[submodule "bundle/vim-jst"]
+	path = bundle/vim-jst
+	url = git@github.com:briancollins/vim-jst.git
