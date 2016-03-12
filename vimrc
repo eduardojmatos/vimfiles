@@ -531,3 +531,13 @@ let g:jshint2_quickfix = 0
 
 " CommandT options
 set wildignore=&wildignore,**/bower_components/*,**/node_modules/*
+
+function! s:OpenEmberAddonFile()
+  let l:moduleName = expand("<cfile>")
+  let l:addonName = matchstr(l:moduleName, "^[^/]*")
+  let l:filename  = matchstr(l:moduleName, "^[^/]*/\\zs.*")
+  execute ":edit node_modules/" . l:addonName . "/addon/" . l:filename . ".js"
+endfunction
+
+nnoremap <leader>oaf :call <SID>OpenEmberAddonFile()<CR>
+
