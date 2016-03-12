@@ -278,3 +278,6 @@
 [submodule "bundle/vim-jst"]
 	path = bundle/vim-jst
 	url = git@github.com:briancollins/vim-jst.git
+[submodule "bundle/vim-snipmate"]
+	path = bundle/vim-snipmate
+	url = git@github.com:nemisj/vim-snipmate.git
