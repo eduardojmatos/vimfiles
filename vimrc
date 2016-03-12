@@ -15,8 +15,10 @@ set nocompatible
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-"store lots of :cmdline history
-set history=100000
+""store lots of :cmdline history
+if !has('nvim')
+  set history=10000
+endif
 
 set showcmd     "show incomplete cmds down the bottom
 set showmode    "show current mode down the bottom
@@ -314,6 +316,11 @@ let g:syntastic_auto_loc_list=0
 let g:syntastic_check_on_open=0
 let g:syntastic_check_on_wq=0
 
+" Copy/Paste/Cut
+if has('unnamedplus')
+  set clipboard=unnamed,unnamedplus
+endif
+
 "key mapping for vimgrep result navigation
 map <A-o> :copen<CR>
 map <A-q> :cclose<CR>
@@ -462,7 +469,9 @@ inoremap <Esc>D <left>
 "set noballooneval
 map <C-t> :CtrlP<CR>
 map <xCSI>[62~ <MouseDown>]
-set ttymouse=xterm2
+if !has('nvim')
+  set ttymouse=xterm2
+endif
 
 let Tlist_Ctags_Cmd='/Users/eduardomatos/.vim/taglist_45'
 
