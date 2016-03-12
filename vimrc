@@ -321,6 +321,10 @@ if has('unnamedplus')
   set clipboard=unnamed,unnamedplus
 endif
 
+noremap YY "+y<CR>
+noremap <leader>p "+gP<CR>
+noremap XX "+x<CR>
+
 "key mapping for vimgrep result navigation
 map <A-o> :copen<CR>
 map <A-q> :cclose<CR>
