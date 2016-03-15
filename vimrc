@@ -317,6 +317,7 @@ let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
 
 autocmd FileType javascript let b:syntastic_checkers = findfile('.jscsrc', '.;') != '' ? ['jscs'] : ['jshint']
+autocmd FileType javascript let b:syntastic_checkers = findfile('.eslintrc', '.;') != '' ? ['eslint'] : ['jshint']
 
 " Copy/Paste/Cut
 if has('unnamedplus')
