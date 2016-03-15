@@ -50,10 +50,6 @@
   path = bundle/endwise
   url = git://github.com/tpope/vim-endwise.git
   ignore = dirty
-[submodule "bundle/snipmate"]
-  path = bundle/snipmate
-  url = git://github.com/akitaonrails/snipmate.vim.git
-  ignore = dirty
 [submodule "bundle/syntastic"]
   path = bundle/syntastic
   url = git://github.com/scrooloose/syntastic.git
@@ -278,6 +274,12 @@
 [submodule "bundle/vim-jst"]
 	path = bundle/vim-jst
 	url = git@github.com:briancollins/vim-jst.git
-[submodule "bundle/vim-snipmate"]
-	path = bundle/vim-snipmate
-	url = git@github.com:nemisj/vim-snipmate.git
+[submodule "bundle/tlib_vim"]
+	path = bundle/tlib_vim
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "bundle/vim-addon-mw-utils"]
+	path = bundle/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/garbas-vim-snipmate"]
+	path = bundle/garbas-vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
