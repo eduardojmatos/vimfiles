@@ -235,12 +235,10 @@ set clipboard=unnamed
 
 if has("gui_running")
     "tell the term has 256 colors
-    set t_Co=256
-
-    colorscheme jellybeans
     set guitablabel=%M%t
     set lines=42
     set columns=213
+    colorscheme jellybeans
 
     if has("gui_gnome")
         set term=gnome-256color
@@ -261,13 +259,14 @@ else
     "dont load csapprox if there is no gui support - silences an annoying warning
     let g:CSApprox_loaded = 1
     let g:CSApprox_verbose_level = 0
+    set t_Co=256
 
     "set railscasts colorscheme when running vim in gnome terminal
     if $COLORTERM == 'gnome-terminal'
         set term=gnome-256color
         colorscheme molokai
     else
-        if $TERM == 'xterm'
+        if $TERM == 'xterm-color' || $TERM == 'xterm'
             set term=xterm-256color
             colorscheme railscasts
         else
@@ -465,8 +464,6 @@ endif
 augroup filetypedetect
   autocmd BufRead,BufNewFile *.prawn set filetype=ruby
 augroup END
-
-autocmd FileType css, sass, scss set omnifunc=csscomplete#CompleteCSS
 
 nmap <F8> :set columns+=10<CR>
 nmap <F9> :set lines+=10<CR>
