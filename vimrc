@@ -338,7 +338,9 @@ map <A-k> :cprevious<CR>
 nnoremap <F4> :GundoToggle<CR>
 
 "snipmate setup
-source ~/.vim/snippets/support_functions.vim
+if filereadable('~/.vim/snippets/support_functions.vim')
+  source ~/.vim/snippets/support_functions.vim
+end
 
 "visual search mappings
 function! s:VSetSearch()
