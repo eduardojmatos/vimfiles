@@ -284,3 +284,6 @@
 [submodule "bundle/vim-polyglot"]
 	path = bundle/vim-polyglot
 	url = git@github.com:sheerun/vim-polyglot.git
+[submodule "bundle/vim-es6"]
+	path = bundle/vim-es6
+	url = git@github.com:isRuslan/vim-es6.git
