@@ -290,3 +290,6 @@
 [submodule "bundle/syntastic-local-eslint.vim"]
 	path = bundle/syntastic-local-eslint.vim
 	url = git@github.com:mtscout6/syntastic-local-eslint.vim.git
+[submodule "bundle/vim-rubocop"]
+	path = bundle/vim-rubocop
+	url = git@github.com:ngmy/vim-rubocop.git
