@@ -293,3 +293,6 @@
 [submodule "bundle/vim-rubocop"]
 	path = bundle/vim-rubocop
 	url = git@github.com:ngmy/vim-rubocop.git
+[submodule "bundle/vim-sass-lint"]
+	path = bundle/vim-sass-lint
+	url = git@github.com:gcorne/vim-sass-lint.git

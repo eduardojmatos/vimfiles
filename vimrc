@@ -317,6 +317,10 @@ let g:syntastic_check_on_wq=0
 
 autocmd FileType javascript let b:syntastic_checkers = findfile('.eslintrc.json', '.;') != '' ? ['eslint'] : ['jshint']
 
+"sass-lint
+let g:syntastic_sass_checkers=["sasslint"]
+let g:syntastic_scss_checkers=["sasslint"]
+
 " Copy/Paste/Cut
 if has('unnamedplus')
   set clipboard=unnamed,unnamedplus
