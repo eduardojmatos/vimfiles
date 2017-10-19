@@ -482,12 +482,14 @@ let g:airline#extensions#tabline#enabled = 1
 let g:gitgutter_enabled = 1
 let g:gitgutter_realtime = 0
 let g:gitgutter_max_signs = 500
-let g:gitgutter_sign_column_always = 1
 let g:gitgutter_highlight_lines = 1
 let g:gitgutter_escape_grep = 1
 let g:gitgutter_sign_added = '++'
 let g:gitgutter_sign_modified = '~~'
 let g:gitgutter_sign_removed = 'xx'
+let g:gitgutter_sign_removed_first_line = "^_"
+
+set signcolumn=yes
 
 " GitGutter override colors
 hi GitGutterAdd               ctermbg=Black     ctermfg=LightGreen    guibg=Black   guifg=LightGreen
