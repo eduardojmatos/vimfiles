@@ -323,6 +323,9 @@ let g:ale_set_quickfix = 1
 let g:ale_linters = {'jsx': ['stylelint', 'eslint']}
 let g:ale_linter_aliases = {'jsx': 'css'}
 
+"airline theme
+let g:airline_theme='molokai'
+
 " Copy/Paste/Cut
 if has('unnamedplus')
   set clipboard=unnamed,unnamedplus
