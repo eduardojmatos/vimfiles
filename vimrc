@@ -309,18 +309,19 @@ inoremap <M-o>       <Esc>o
 inoremap <C-j>       <Down>
 let g:ragtag_global_maps = 1
 
-"mark syntax errors with :signs | syntax options
-let g:syntastic_enable_signs=1
-let g:syntastic_always_populate_loc_list=0
-let g:syntastic_auto_loc_list=0
-let g:syntastic_check_on_open=1
-let g:syntastic_check_on_wq=0
+"ale syntax/lint options
+let g:ale_set_highlights = 0
+let g:ale_sign_column_always = 1
+let g:airline#extensions#ale#enabled = 1
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
 
-autocmd FileType javascript let b:syntastic_checkers = findfile('.eslintrc.json', '.;') != '' ? ['eslint'] : ['jshint']
-
-"sass-lint
-let g:syntastic_sass_checkers=["sasslint"]
-let g:syntastic_scss_checkers=["sasslint"]
+"jsx ale fix
+let g:ale_linters = {'jsx': ['stylelint', 'eslint']}
+let g:ale_linter_aliases = {'jsx': 'css'}
 
 " Copy/Paste/Cut
 if has('unnamedplus')

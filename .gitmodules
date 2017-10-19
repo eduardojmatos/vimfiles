@@ -280,3 +280,9 @@
 [submodule "bundle/vim-sass-lint"]
 	path = bundle/vim-sass-lint
 	url = git@github.com:gcorne/vim-sass-lint.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = git@github.com:w0rp/ale.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git
