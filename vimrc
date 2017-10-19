@@ -50,6 +50,9 @@ set linespace=4
 "disable visual bell
 set visualbell t_vb=
 
+"safe write
+set backupcopy=yes
+
 "try to make possible to navigate within lines of wrapped lines
 nmap <Down> gj
 nmap <Up> gk
