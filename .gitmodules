@@ -142,17 +142,9 @@
   path = bundle/vim-yankring
   url = git://github.com/chrismetcalf/vim-yankring.git
   ignore = dirty
-[submodule "bundle/vim-rvm"]
-  path = bundle/vim-rvm
-  url = git://github.com/tpope/vim-rvm.git
-  ignore = dirty
 [submodule "bundle/actionscript"]
   path = bundle/actionscript
   url = git://github.com/endel/actionscript.vim.git
-  ignore = dirty
-[submodule "bundle/vim-capybara"]
-  path = bundle/vim-capybara
-  url = git://github.com/asux/vim-capybara.git
   ignore = dirty
 [submodule "bundle/vim-autoclose"]
   path = bundle/vim-autoclose
