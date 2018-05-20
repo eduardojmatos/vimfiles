@@ -517,6 +517,9 @@ let g:jshint2_read = 0
 let g:jshint2_height = 5
 let g:jshint2_quickfix = 0
 
+" Disable Ruby Provider
+let g:loaded_ruby_provider = 1
+
 " CommandT options
 set wildignore=&wildignore,**/bower_components/*,**/node_modules/*
 
