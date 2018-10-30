@@ -12,12 +12,24 @@ execute pathogen#infect()
 "This must be first, because it changes other options as a side effect.
 set nocompatible
 
+"Show matching brackets.
+set showmatch
+
+"Case insensitive matching
+set ignorecase
+
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
 ""store lots of :cmdline history
 if !has('nvim')
   set history=10000
+endif
+
+if has('nvim')
+  let s:editor_root=expand('~/.config/nvim')
+else
+  let s:editor_root=expand('~/.vim')
 endif
 
 set showcmd     "show incomplete cmds down the bottom
@@ -27,7 +39,8 @@ set shortmess+=A "A don't give the 'ATTENTION' message when an existing swap fil
 set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
 
-set number      "add line numbers
+"add line numbers
+set number
 set showbreak=...
 set wrap linebreak nolist
 
@@ -203,6 +216,9 @@ set nofoldenable        "dont fold by default
 set wildmode=list:longest   "make cmdline tab completion similar to bash
 set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
+
+"set 120 column border - coding style
+set cc=120
 
 "display tabs and trailing spaces
 "set list
@@ -509,6 +525,9 @@ highlight link GitGutterDeleteLine myGitGutterDeleteLine
 
 " Search color highlight
 hi Search    ctermbg=2    ctermfg=232    guibg=#47583B  guifg=NONE  cterm=NONE      gui=NONE
+
+" Border column max width
+hi ColorColumn ctermbg=2 guibg=LightGreen
 
 " JSHint options
 let g:jshint2_close = 0
