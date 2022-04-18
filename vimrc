@@ -344,7 +344,7 @@ let g:airline_theme='molokai'
 
 " Copy/Paste/Cut
 if has('unnamedplus')
-  set clipboard=unnamed,unnamedplus
+  set clipboard+=unnamedplus
 endif
 
 noremap YY "+y<CR>
