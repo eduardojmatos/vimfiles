@@ -365,6 +365,8 @@ if filereadable('~/.vim/snippets/support_functions.vim')
   source ~/.vim/snippets/support_functions.vim
 end
 
+let g:snipMate = { 'snippet_version' : 1 }
+
 "visual search mappings
 function! s:VSetSearch()
     let temp = @@
